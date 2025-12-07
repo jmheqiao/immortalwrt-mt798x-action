@@ -223,7 +223,7 @@ case "$platform" in
     cetron-ct3003-ubootmod|cmcc-a10-ubootmod|h3c-magic-nx30-pro|imou-lc-hx3001|nokia-ea0326gmp|qihoo-360t7)
         curl -s "$mirror/openwrt/24-config-ax3000-common" >> .config
         ;;
-    clx-s20p|24-config-musl-re-cp-03)
+    clx-s20p|jdcloud-re-cp-03)
         curl -s "$mirror/openwrt/24-config-ax6000-common" >> .config
         ;;
     netcore-n60-pro|netcore-n60-pro-512rom)
