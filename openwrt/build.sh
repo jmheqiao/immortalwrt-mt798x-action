@@ -201,7 +201,7 @@ if [ "$platform" = "cetron-ct3003-ubootmod" ]; then
 elif [ "$platform" = "cmcc-a10-ubootmod" ]; then
     curl -s $mirror/openwrt/24-config-musl-a10 > .config
 elif [ "$platform" = "h3c-magic-nx30-pro" ]; then
-    curl -s $mirror/openwrt/24-config-musl-nx30 > .config
+    curl -s $mirror/openwrt/24-config-musl-nx30-pro > .config
 elif [ "$platform" = "imou-lc-hx3001" ]; then
     curl -s $mirror/openwrt/24-config-musl-hx3001 > .config
 elif [ "$platform" = "nokia-ea0326gmp" ]; then
