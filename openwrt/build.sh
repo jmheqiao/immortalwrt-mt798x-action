@@ -97,6 +97,10 @@ case "$platform" in
         echo -e "${GREEN_COLOR}Model: Nokia EA0326GMP${RES}"
         model="ea0326gmp"
         ;;
+    philips-hy3000)
+        echo -e "${GREEN_COLOR}Model: Philips HY3000${RES}"
+        model="hy3000"
+        ;;    
     qihoo-360t7)
         echo -e "${GREEN_COLOR}Model: 360 T7${RES}"
         model="360t7"
@@ -238,6 +242,9 @@ case "$platform" in
     nokia-ea0326gmp)
         curl -s $mirror/openwrt/24-config-musl-ea0326gmp > .config
         ;;
+    philips-hy3000)
+        curl -s $mirror/openwrt/24-config-musl-hy3000 > .config
+        ;;
     qihoo-360t7)
         curl -s $mirror/openwrt/24-config-musl-360t7 > .config
         ;;
@@ -266,7 +273,7 @@ esac
 
 # config-common
 case "$platform" in
-    cetron-ct3003|cmcc-a10|umi-uax3000e|h3c-magic-nx30-pro|imou-lc-hx3001|nokia-ea0326gmp|qihoo-360t7|newland-nl-wr8103)
+    cetron-ct3003|cmcc-a10|umi-uax3000e|h3c-magic-nx30-pro|imou-lc-hx3001|nokia-ea0326gmp|philips-hy3000|qihoo-360t7|newland-nl-wr8103)
         curl -s "$mirror/openwrt/24-config-ax3000-common" >> .config
         ;;
     jdcloud-re-cp-03|xiaomi-redmi-router-ax6000|xiaomi-redmi-router-ax6000-512rom)
