@@ -26,6 +26,9 @@ on:
           - 'xiaomi-redmi-router-ax6000'
           - 'xiaomi-redmi-router-ax6000-512rom'
           - 'jdcloud-re-cp-03'
+          - '全部 MT7981 设备'
+          - '全部 MT7986 设备'
+          - '全部高功率设备'
       lan_addr:
         description: '🌐 设置默认 LAN IP 地址'
         required: true
