@@ -38,7 +38,12 @@ on:
         description: '🛜 设置默认 WIFI 名称（可选，默认ZeroWrt）'
         required: false
         default: 'ZeroWrt'
-        type: string        
+        type: string
+      wifi_password:
+        description: '🆔 设置默认 WIFI 密码（可选，默认1234567890）'
+        required: false
+        default: '1234567890'
+        type: string          
       root_password:
         description: '🔐 设置默认 root 密码（可选，默认password）'
         required: false
@@ -112,7 +117,7 @@ jobs:
       id: compile
       continue-on-error: true
       run: |
-        export ${{ github.event.inputs.build_options }} LAN=${{ github.event.inputs.lan_addr }} WIFI_NAME=${{ github.event.inputs.wifi_name }}
+        export ${{ github.event.inputs.build_options }} LAN=${{ github.event.inputs.lan_addr }} WIFI_NAME=${{ github.event.inputs.wifi_name }} WIFI_PASSWORD=${{ github.event.inputs.wifi_password }}
         [ -n ${{ github.event.inputs.root_password }} ] && export ROOT_PASSWORD="${{ github.event.inputs.root_password }}"
         bash <(curl -sS http://127.0.0.1:8080/build.sh) ${{ github.event.inputs.device }}
         cd openwrt
