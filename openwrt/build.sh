@@ -184,6 +184,9 @@ print_status() {
 [ -n "$WIFI_NAME" ] \
     && echo -e "${GREEN_COLOR}WIFI NAME:${RES} ${BLUE_COLOR}$WIFI_NAME${RES}" \
     || echo -e "${GREEN_COLOR}WIFI NAME:${RES} (${YELLOW_COLOR}No WIFI NAME${RES})"
+[ -n "$WIFI_PASSWORD" ] \
+    && echo -e "${GREEN_COLOR}WIFI NAME:${RES} ${BLUE_COLOR}$WIFI_PASSWORD${RES}" \
+    || echo -e "${GREEN_COLOR}WIFI NAME:${RES} (${YELLOW_COLOR}No WIFI PASSWORD${RES})"
 print_status "ENABLE_BPF"        "$ENABLE_BPF" "$GREEN_COLOR" "$RED_COLOR"
 print_status "BUILD_FAST"        "$BUILD_FAST"
 print_status "ENABLE_DOCKER"     "$ENABLE_DOCKER"
