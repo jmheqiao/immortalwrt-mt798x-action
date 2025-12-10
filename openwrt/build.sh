@@ -131,6 +131,10 @@ case "$platform" in
         echo -e "${GREEN_COLOR}Model: CLX S20P${RES}"
         model="s20p"
         ;;
+    netcore-n60)
+        echo -e "${GREEN_COLOR}Model: Netcore N60${RES}"
+        model="n60"
+        ;;
     netcore-n60-pro)
         echo -e "${GREEN_COLOR}Model: Netcore N60 Pro${RES}"
         model="n60-pro"
@@ -299,6 +303,9 @@ case "$platform" in
     clx-s20p)
         curl -s $mirror/openwrt/24-config-musl-s20p > .config
         ;;
+    netcore-n60)
+        curl -s $mirror/openwrt/24-config-musl-n60 > .config
+        ;;        
     netcore-n60-pro)
         curl -s $mirror/openwrt/24-config-musl-n60pro > .config
         ;;
@@ -336,6 +343,9 @@ case "$platform" in
     clx-s20p|netcore-n60-pro|netcore-n60-pro-512rom|all-high-power-devices)
         curl -s "$mirror/openwrt/24-config-ipailna-high-power" >> .config
         ;;
+    n60)
+        curl -s "$mirror/openwrt/24-config-ax6000-256m-common" >> .config
+        ;;        
 esac
 
 # config-general
