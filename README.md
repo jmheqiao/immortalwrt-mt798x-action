@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/github/forks/OPPEN321/immortalwrt-mt798x-action.svg?style=for-the-badge&color=ff69b4"/>
 <img src="https://img.shields.io/github/license/OPPEN321/immortalwrt-mt798x-action.svg?style=for-the-badge&color=blueviolet"/>
 
-[![](https://img.shields.io/badge/-目录:-696969.svg)](#readme) [![](https://img.shields.io/badge/-项目说明-FFFFFF.svg)](#项目说明-) [![](https://img.shields.io/badge/-固件特色-FFFFFF.svg)](#固件特色-) [![](https://img.shields.io/badge/-固件下载-FFFFFF.svg)](#固件下载-) [![](https://img.shields.io/badge/-近期更新-FFFFFF.svg)](#近期更新-) [![](https://img.shields.io/badge/-插件预览-FFFFFF.svg)](#插件预览-) [![](https://img.shields.io/badge/-定制固件-FFFFFF.svg)](#定制固件-) [![](https://img.shields.io/badge/-特别提示-FFFFFF.svg)](#特别提示-) [![](https://img.shields.io/badge/-特殊变量-FFFFFF.svg)](#特殊变量-) [![](https://img.shields.io/badge/-鸣谢-FFFFFF.svg)](#鸣谢-)
+[![](https://img.shields.io/badge/-目录:-696969.svg)](#readme) [![](https://img.shields.io/badge/-项目说明-FFFFFF.svg)](#项目说明-) [![](https://img.shields.io/badge/-固件特色-FFFFFF.svg)](#固件特色-) [![](https://img.shields.io/badge/-固件下载-FFFFFF.svg)](#固件下载-) [![](https://img.shields.io/badge/-近期更新-FFFFFF.svg)](#近期更新-) [![](https://img.shields.io/badge/-固件预览-FFFFFF.svg)](#固件预览-)[![](https://img.shields.io/badge/-插件预览-FFFFFF.svg)](#插件预览-) [![](https://img.shields.io/badge/-定制固件-FFFFFF.svg)](#定制固件-) [![](https://img.shields.io/badge/-特别提示-FFFFFF.svg)](#特别提示-) [![](https://img.shields.io/badge/-特殊变量-FFFFFF.svg)](#特殊变量-) [![](https://img.shields.io/badge/-鸣谢-FFFFFF.svg)](#鸣谢-)
 </div>
 
 ## 项目说明 [![](https://img.shields.io/badge/-项目基本介绍-FFFFFF.svg)](#项目说明-)
@@ -66,7 +66,11 @@
 ## 近期更新 [![](https://img.shields.io/badge/-近期固件更新-FFFFFF.svg)](#近期更新-)
 🤣努力修复中……
 
-## 插件预览 [![](https://img.shields.io/badge/-固件插件及功能预览-FFFFFF.svg)](#插件预览-)
+## 固件预览 [![](https://img.shields.io/badge/-固件风格预览-FFFFFF.svg)](#固件预览-)
+![star](images/000.png)
+![star](images/001.png)
+
+## 插件预览 [![](https://img.shields.io/badge/-插件及功能预览-FFFFFF.svg)](#插件预览-)
 <details>
 <summary><b>LuCI 菜单概览</b></summary>
 <details>
