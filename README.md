@@ -214,6 +214,12 @@ BUILD_DOCKER=y
 ENABLE_SAMBA4=y
 ```
 
+### STORE 应用商店
+##### 只需在构建固件前在构建选项中加入该选项即可在固件中加入应用商店
+```
+ENABLE_STORE=y
+```
+
 ## 特别提示 [![](https://img.shields.io/badge/-个人免责声明-FFFFFF.svg)](#特别提示-)
 
 - **因精力有限不提供任何技术支持和教程等相关问题解答，不保证完全无 BUG！**
