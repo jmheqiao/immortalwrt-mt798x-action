@@ -20,6 +20,13 @@ endgroup() {
     GROUP=
 }
 
+# check
+if [ "$(whoami)" != "zhao" ] && [ -z "$git_name" ] && [ -z "$git_password" ]; then
+    echo -e "\n${RED_COLOR} Not authorized. Execute the following command to provide authorization information:${RES}\n"
+    echo -e "${BLUE_COLOR} export git_name=your_username git_password=your_password${RES}\n"
+    exit 1
+fi
+
 # script url
 export mirror=http://127.0.0.1:8080
 
@@ -238,7 +245,7 @@ rm -rf openwrt
 
 # openwrt - releases
 [ "$(whoami)" = "runner" ] && group "source code"
-git clone --depth=1 -b openwrt-24.10 https://$github/QuickWrt/immortalwrt-mt798x.git openwrt
+git clone --depth=1 -b openwrt-24.10 https://$git_name:$git_password@$gitea/zhao/immortalwrt-mt798x.git openwrt
 
 if [ -d openwrt ]; then
     cd openwrt
